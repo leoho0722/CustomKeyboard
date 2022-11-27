@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="CustomKeyboard" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="textFields" destination="gbc-Kd-sJg" collectionClass="NSMutableArray" id="n4U-Jg-f3i"/>
+                <outletCollection property="textFields" destination="dnd-sN-dT5" collectionClass="NSMutableArray" id="ysS-Zq-nIi"/>
+                <outletCollection property="textFields" destination="srI-LR-pkZ" collectionClass="NSMutableArray" id="2C9-BB-qdp"/>
+                <outletCollection property="textFields" destination="bwS-W5-3hM" collectionClass="NSMutableArray" id="Nas-nE-HYF"/>
+                <outletCollection property="textFields" destination="Z2Q-sr-cn1" collectionClass="NSMutableArray" id="xNX-Bj-Q8J"/>
+                <outletCollection property="textFields" destination="itX-Gt-gLy" collectionClass="NSMutableArray" id="cDJ-0k-1C7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y91-0N-RL1">
+                    <rect key="frame" x="51.666666666666657" y="418.66666666666669" width="290" height="40"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbc-Kd-sJg">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="gbc-Kd-sJg" secondAttribute="height" multiplier="1:1" id="HeK-7t-ZY5"/>
+                                <constraint firstAttribute="width" constant="40" id="VYl-ND-y4C"/>
+                                <constraint firstAttribute="height" constant="40" id="yHb-f2-9Tx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dnd-sN-dT5">
+                            <rect key="frame" x="50" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="OKh-DE-PKM"/>
+                                <constraint firstAttribute="width" secondItem="dnd-sN-dT5" secondAttribute="height" multiplier="1:1" id="dkv-Ab-iWs"/>
+                                <constraint firstAttribute="height" constant="40" id="mJI-ih-6S5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="srI-LR-pkZ">
+                            <rect key="frame" x="100" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="srI-LR-pkZ" secondAttribute="height" multiplier="1:1" id="Dy9-gC-ZSZ"/>
+                                <constraint firstAttribute="width" constant="40" id="c4g-Y9-Nwl"/>
+                                <constraint firstAttribute="height" constant="40" id="slc-WE-jOO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bwS-W5-3hM">
+                            <rect key="frame" x="150" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="7Ac-GG-8H1"/>
+                                <constraint firstAttribute="width" secondItem="bwS-W5-3hM" secondAttribute="height" multiplier="1:1" id="O9O-Le-Nih"/>
+                                <constraint firstAttribute="height" constant="40" id="oTa-Nw-ZVM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z2Q-sr-cn1">
+                            <rect key="frame" x="200" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="aww-wG-80P"/>
+                                <constraint firstAttribute="height" constant="40" id="q2e-yX-3C5"/>
+                                <constraint firstAttribute="width" secondItem="Z2Q-sr-cn1" secondAttribute="height" multiplier="1:1" id="tXO-IM-VEV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="itX-Gt-gLy">
+                            <rect key="frame" x="250" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="gcD-qY-ImY"/>
+                                <constraint firstAttribute="width" secondItem="itX-Gt-gLy" secondAttribute="height" multiplier="1:1" id="llg-O6-8Pj"/>
+                                <constraint firstAttribute="height" constant="40" id="ySG-R6-cVl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="y91-0N-RL1" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="g0T-JF-crW"/>
+                <constraint firstItem="y91-0N-RL1" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="oPM-fM-aoO"/>
+            </constraints>
+            <point key="canvasLocation" x="47" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
